@@ -1,34 +1,48 @@
-# Methods, Help & Documentation Practice #1
-# Remove the characters to the left of our main text:
+# functions are ways to wrap your code into reuseble units
+# place () after the function name to invoke it
 
-# ,
+# def happy_birthday(name, age): # this is how you define the function # name is the parameter, place holder for future information
+#     #position of the parameter does matter
+#     print(f"Happy Birthday to {name}!")
+#     print(f"You are {age} years old!")
+#     print("Hapy Birthday to you!")
 
-# :
+# happy_birthday("Sis", 20) # this is how you call/invoke the function # sis is the arguement, what goes inside the value
+# happy_birthday("Angela", 30)
+# happy_birthday("Victoria", 40) 
 
-# %
+# def display_invoice(username, amount, due_date):
+#     print(f"Hello {username}")
+#     print(f"Your bill of ${amount:.2f} is due: {due_date}")
 
-# _
+# display_invoice("BroCode", 42.50, "01/01")
 
-# #
+#return = statment used to end a function and send a result back to the caller
 
-# Use the lstrip() method. Print the result to the screen:
+# def add(x, y):
+#     z = x + y
+#     return z
 
-# ",:_#,,,,,,:::____##Total_ _Pyt%on,,,,,,::#"
+# def subtract(x , y):
+#     z = x - y
+#     return z
 
-# Search the documentation for the requested method to learn how it works. You can use intermediate variables if you need them.
+# def multiply(x , y):
+#     z = x * y
+#     return 
 
+# def divide(x, y):
+#     z = x / y
+#     return z
 
-# Methods, Help & Documentation Practice #2
-# Add the element "orange" as the fourth element of the following list fruits, using the insert() method:
+# print(add(1, 2))
+# print(subtract(1, 2))
+# print(multiply(1, 2))
+# print(divide(1, 2))
 
-# fruits = ["mango", "banana", "cherry", "plum", "grapefruit"]
+def create_name(first, last):
+    first = first.capitalize()
+    last = last.capitalize()
+    return first + " " + last
 
-# Search the documentation for the requested method to know how it works.
-
-# Methods, Help & Documentation Practice #3
-# Check if the sets below are isolated (that is, they have no elements in common), using the isdisjoint() method. Store this result in the isolated_sets variable:
-
-# phone_brands = {"Samsung", "Xiaomi", "Apple", "Huawei", "LG"}
-# tv_brands = {"Sony", "Philips", "Samsung", "LG"}
-# Search the documentation for the requested method to know how it works.
-
+full_name = create_name("bro", "code")
