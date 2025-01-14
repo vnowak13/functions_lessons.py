@@ -86,12 +86,11 @@ def count_even(numbers): #defines the list
     count = 0  #starting count off with zero
     for num in numbers: #number in list
         if num % 2 == 0:  # Check if the number is even
-            count + 1 #adds 1 to the count 
     return count
 
 # Test list of numbers
 numbers = [15, 7, 20, 25, 3, 1000] #list of random numbers/ new list
 
 # Calling the function with the numbers list
-result = count_even(numbers) #puts all the info in the value "result"
+result = count_even(numbers) #puts all the info in the value result"
 print(result) #prints the result/function
